@@ -1,7 +1,146 @@
-.top-bar {
-  background-color: red;
-  .wrap {
-    min-width: 1320px;
-    margin: 0 auto;
+header {
+  position: relative;
+  ul,
+  li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  a {
+    display: inline-block;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.2;
+    position: relative;
+    text-decoration: none;
+  }
+  .top {
+    background-image: linear-gradient(
+      180deg,
+      #000000 0%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    .wrap {
+      width: calc(100% - 40px);
+      margin: 0 auto;
+      padding: 16px 0;
+      display: flex;
+      align-items: center;
+      position: relative;
+      @media (min-width: $xxl) {
+        max-width: 1320px;
+        padding: 34px 0;
+      }
+      .logo {
+        display: inline-block;
+      }
+
+      .main-ul {
+        padding: 0;
+        left: -100vw;
+        width: 100%;
+        position: absolute;
+        transition: left 0.3s ease-in-out;
+        top: 81px;
+        // padding: 0 0 0 40px;
+        @media (min-width: $lg) {
+          top: 0;
+          position: relative;
+          width: auto;
+          left: 0;
+          padding: 0 0 0 10px;
+        }
+        @media (min-width: $xxl) {
+          padding: 0 0 0 140px;
+        }
+
+        &.active {
+          left: 0;
+          transition: left 0.3s ease-in-out;
+        }
+
+        li {
+          @media (min-width: $lg) {
+            display: inline-block;
+          }
+          a {
+            color: #000;
+            padding: 0;
+            @media (min-width: $lg) {
+              color: #fff;
+              padding: 0 10px;
+            }
+            @media (min-width: $xl) {
+              color: #fff;
+              padding: 0 26px;
+            }
+          }
+        }
+      }
+      .second-ul {
+        margin: 0 0 0 auto;
+        .first {
+          display: inline-block;
+          padding: 0 50px 0 0;
+          @media (min-width: $lg) {
+            padding: 0 67px 0 0;
+          }
+          a {
+            img {
+              padding: 0 10px 0 0;
+            }
+            &:after {
+              content: "";
+              position: absolute;
+              background-image: url(../images/ardown.png);
+              right: -21px;
+              width: 12px;
+              height: 7px;
+              bottom: 37%;
+            }
+          }
+        }
+        .last {
+          display: inline-block;
+          a {
+            padding: 10px 23px;
+            border: 2px solid #fff;
+            border-radius: 4px;
+          }
+        }
+      }
+      .hamburger {
+        width: 25px;
+        height: 25px;
+        position: relative;
+        .bar {
+          height: 3px;
+          width: 100%;
+          background-color: #fff;
+          position: absolute;
+          top: 50%;
+          &:before,
+          &:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            background-color: #fff;
+          }
+          &:before {
+            top: -7px;
+          }
+          &:after {
+            bottom: -7px;
+          }
+        }
+      }
+    }
   }
 }
