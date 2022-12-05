@@ -51,7 +51,6 @@ xmlrpc.php
 
 # User-specific stuff:
 .idea/
-dist/
 .idea/**/workspace.xml
 .idea/**/tasks.xml
 
