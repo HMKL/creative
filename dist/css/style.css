@@ -8086,8 +8086,97 @@ header .top .wrap .hamburger .bar:after {
   font-family: "Inter", sans-serif;
 }
 
+.creative-one .inner ul {
+  list-style: none;
+  margin: 0;
+}
+
 .creative-one .inner .items-photo {
   position: relative;
+}
+
+.creative-one .inner .items-photo .logo-one {
+  position: absolute;
+  left: 40.4%;
+  bottom: 19%;
+  width: 7%;
+}
+
+.creative-one .inner .items-photo .logo-two {
+  position: absolute;
+  top: 50%;
+  left: 76%;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  -webkit-filter: drop-shadow(0px 5px 11.5px rgba(0, 0, 0, 0.09));
+  filter: drop-shadow(0px 5px 11.5px rgba(0, 0, 0, 0.09));
+  background-color: #fff;
+}
+
+.creative-one .inner .items-photo .logo-two img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 20px;
+}
+
+.creative-one .inner .items-photo .country {
+  position: absolute;
+  top: 84%;
+  left: 65%;
+  width: 65px;
+  height: 25px;
+  border-radius: 10px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-filter: drop-shadow(0 0 11.5px rgba(0, 0, 0, 0.1));
+  filter: drop-shadow(0 0 11.5px rgba(0, 0, 0, 0.1));
+  background-color: #0a447a;
+}
+
+.creative-one .inner .items-photo .country ul {
+  padding: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.creative-one .inner .items-photo .country ul li {
+  padding: 0 2px;
+}
+
+.creative-one .inner .items-photo .country ul li img {
+  width: 14px;
+  display: block;
+}
+
+.creative-one .inner .items-photo .country ul li.last {
+  position: relative;
+}
+
+.creative-one .inner .items-photo .country ul li.last span {
+  font-size: 5px;
+  color: #012071;
+  font-weight: 700;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0;
 }
 
 .creative-one .inner .items-photo .hello {
@@ -8151,8 +8240,6 @@ header .top .wrap .hamburger .bar:after {
 }
 
 .creative-one .inner .items-text ul {
-  margin: 0;
-  list-style: none;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -10970,6 +11057,22 @@ header .top .wrap .hamburger .bar:after {
     content: "";
   }
 
+  .creative-one .inner .items-photo .logo-two {
+    width: 32px;
+    height: 32px;
+    top: 48%;
+    left: 79%;
+  }
+
+  .creative-one .inner .items-photo .logo-two img {
+    width: 24px;
+  }
+
+  .creative-one .inner .items-photo .country {
+    top: 88%;
+    left: 75%;
+  }
+
   .creative-one .inner .items-photo .hello {
     top: 25%;
     left: 9%;
@@ -12595,6 +12698,30 @@ header .top .wrap .hamburger .bar:after {
     padding: 150px 0 0 150px;
   }
 
+  .creative-one .inner .items-photo .logo-one {
+    bottom: 38%;
+  }
+
+  .creative-one .inner .items-photo .logo-two {
+    top: 36%;
+    left: 77%;
+  }
+
+  .creative-one .inner .items-photo .country {
+    width: 113px;
+    height: 29px;
+    top: 66%;
+    left: 59%;
+  }
+
+  .creative-one .inner .items-photo .country ul li img {
+    width: auto;
+  }
+
+  .creative-one .inner .items-photo .country ul li.last span {
+    font-size: 12px;
+  }
+
   .creative-one .inner .items-photo .hello {
     top: 18%;
     left: 0;
@@ -14184,6 +14311,32 @@ header .top .wrap .hamburger .bar:after {
   header .top .wrap .main-ul li a {
     color: #fff;
     padding: 0 26px;
+  }
+
+  .creative-one .inner .items-photo .logo-one {
+    bottom: 19%;
+  }
+
+  .creative-one .inner .items-photo .logo-two {
+    width: 68px;
+    height: 68px;
+    top: 49%;
+    left: 77%;
+  }
+
+  .creative-one .inner .items-photo .logo-two img {
+    width: auto;
+  }
+
+  .creative-one .inner .items-photo .country {
+    width: 157px;
+    height: 61px;
+    top: 83%;
+    left: 66%;
+  }
+
+  .creative-one .inner .items-photo .country {
+    left: 62%;
   }
 
   .creative-one .inner .items-photo .hello {
