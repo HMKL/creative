@@ -4,16 +4,21 @@
   background-size: cover;
   position: relative;
   @media (min-width: $xxl) {
-    min-height: 868px;
+    // min-height: 868px;
   }
 
   .inner {
     padding: 45px 0 0 0px;
     display: flex;
     flex-direction: column-reverse;
+    // align-items: flex-end;
+    // justify-content: center;
     @media (min-width: $lg) {
       flex-direction: row;
       padding: 150px 0 0 150px;
+    }
+    @media (min-width: $xxl) {
+      // justify-content: center;
     }
     h2,
     p,
@@ -58,6 +63,8 @@
         @media (min-width: $lg) {
           top: 36%;
           left: 77%;
+          width: 49px;
+          height: 49px;
         }
         @media (min-width: $xl) {
           width: 68px;
@@ -76,11 +83,11 @@
             width: 24px;
           }
 
-          // @media (min-width: $lg) {
-          //   width: 3px;
-          // }
+          @media (min-width: $lg) {
+            width: 27px;
+          }
           @media (min-width: $xl) {
-            width: auto;
+            width: 47px;
           }
         }
       }
@@ -110,9 +117,6 @@
           height: 61px;
           top: 83%;
           left: 66%;
-        }
-        @media (min-width: $xl) {
-          left: 62%;
         }
         ul {
           padding: 0;
