@@ -1,25 +1,21 @@
 .creative-one {
   background-repeat: no-repeat;
-  //   min-height: 668px;
+
   background-size: cover;
   position: relative;
   @media (min-width: $xxl) {
-    // min-height: 868px;
   }
 
   .inner {
     padding: 45px 0 0 0px;
     display: flex;
     flex-direction: column-reverse;
-    // align-items: flex-end;
-    // justify-content: center;
+
     @media (min-width: $lg) {
       flex-direction: row;
       padding: 150px 0 0 150px;
     }
-    @media (min-width: $xxl) {
-      // justify-content: center;
-    }
+
     h2,
     p,
     a {

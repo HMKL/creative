@@ -80,12 +80,8 @@
         width: calc(100% - 40px);
       }
       .swiper-wrapper {
-        background-color: red;
+        // background-color: red;
         .swiper-slide {
-          background-color: green;
-          border-radius: 10px;
-          display: flex;
-          justify-content: center;
           .items {
             width: 290px;
             height: 317px;
@@ -127,6 +123,20 @@
               li {
                 list-style: none;
                 color: #fff;
+
+                &:last-of-type {
+                  padding: 10px 0 0 0;
+                  a {
+                    font-size: 14px;
+                    @media (min-width: $lg) {
+                      font-size: 20px;
+                    }
+                  }
+                  @media (min-width: $lg) {
+                    padding: 40px 0 0 0;
+                  }
+                }
+
                 h3 {
                   padding: 16px 0 10px 0;
                   font-size: 20px;
@@ -166,6 +176,7 @@
                   color: #fff;
                   font-weight: 700;
                   position: relative;
+
                   &:before {
                     content: "";
                     background-image: url(../images/arrowright.png);
@@ -173,6 +184,9 @@
                     width: 28px;
                     height: 15px;
                     position: absolute;
+                    top: 50%;
+                    transform: translate(0%, -40%);
+                    left: calc(100% + 10px);
                   }
                 }
               }

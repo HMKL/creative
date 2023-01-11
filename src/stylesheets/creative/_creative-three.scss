@@ -1,0 +1,58 @@
+.creative-three {
+  .wrap {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    position: relative;
+    @media (min-width: $xxl) {
+      max-width: 1320px;
+    }
+    p {
+      margin: 0;
+      font-family: "Inter", sans-serif;
+    }
+
+    .numbers {
+      padding: 45px 0 45px 0;
+      @media (min-width: $lg) {
+        padding: 75px 0 78px 0;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+
+        li {
+          width: 50%;
+          list-style: none;
+          text-align: center;
+          @media (min-width: $lg) {
+            width: 25%;
+          }
+          &:nth-child(n + 3) {
+            padding: 25px 0 0 0;
+            @media (min-width: $lg) {
+              padding: 0;
+            }
+          }
+          p {
+            font-size: 22px;
+            color: #0a457a;
+            font-weight: 800;
+            @media (min-width: $lg) {
+              font-size: 48px;
+            }
+            &:last-of-type {
+              color: #000000;
+              font-weight: 500;
+              font-size: 13px;
+              @media (min-width: $lg) {
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -44,8 +44,9 @@ let layoutHandler;
 
     var swiper = new Swiper(".main", {
       slidesPerView: 1,
-      spaceBetween: 30,
-      loop: true,
+      // spaceBetween: 30,
+
+      // loop: true,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -56,8 +57,8 @@ let layoutHandler;
       },
       breakpoints: {
         0: {
-          slidesPerView: 1.3,
-          spaceBetween: 15,
+          slidesPerView: 1.2,
+          spaceBetween: 30,
         },
         520: {
           slidesPerView: 2,
@@ -69,6 +70,7 @@ let layoutHandler;
         //   slidesPerView: 3,
         // },
       },
+
     });
 
 
